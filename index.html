@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoPoint — Автоуслуги и Trade-in</title>
+  <meta
+    name="description"
+    content="AutoPoint: сервисное обслуживание, детейлинг, диагностика и автотрейд-ин. Оцените авто онлайн и оставьте заявку за 2 минуты."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">AutoPoint</a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню">☰</button>
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#tradein">Trade-in</a>
+        <a href="#inventory">Авто в наличии</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn btn--small" href="#lead-form">Оставить заявку</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="label">Новый уровень автосервиса</p>
+          <h1>Автоуслуги и автотрейд-ин в одном месте</h1>
+          <p class="hero__text">
+            Проводим полное обслуживание, выкупаем ваш автомобиль по честной цене
+            и подбираем новый из проверенного каталога.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="#tradein">Оценить авто</a>
+            <a class="btn btn--ghost" href="#services">Посмотреть услуги</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>12 000+</strong><span>обслуженных авто</span></li>
+            <li><strong>7 лет</strong><span>на рынке</span></li>
+            <li><strong>4.9/5</strong><span>рейтинг клиентов</span></li>
+          </ul>
+        </div>
+        <div class="hero__card">
+          <h2>Почему выбирают нас</h2>
+          <ul>
+            <li>Гарантия на работы до 24 месяцев</li>
+            <li>Онлайн-оценка Trade-in за 5 минут</li>
+            <li>Прозрачная диагностика с фотоотчетом</li>
+            <li>Финальные условия фиксируются в договоре</li>
+          </ul>
+          <p class="hero__card-note">Работаем ежедневно с 09:00 до 21:00</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section__heading">
+          <p class="label">Автоуслуги</p>
+          <h2>Комплексный подход к вашему автомобилю</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Плановое ТО</h3>
+            <p>Замена масел, фильтров и технических жидкостей по регламенту.</p>
+            <span>от 6 500 ₽</span>
+          </article>
+          <article class="card">
+            <h3>Компьютерная диагностика</h3>
+            <p>Проверка электроники, систем безопасности и скрытых ошибок.</p>
+            <span>от 2 000 ₽</span>
+          </article>
+          <article class="card">
+            <h3>Кузовной ремонт</h3>
+            <p>Локальная покраска, удаление вмятин и восстановление геометрии.</p>
+            <span>от 9 900 ₽</span>
+          </article>
+          <article class="card">
+            <h3>Шиномонтаж и хранение</h3>
+            <p>Сезонная переобувка, балансировка и хранение комплектов шин.</p>
+            <span>от 2 500 ₽</span>
+          </article>
+          <article class="card">
+            <h3>Детейлинг</h3>
+            <p>Химчистка салона, полировка, керамика и защитные покрытия.</p>
+            <span>от 7 500 ₽</span>
+          </article>
+          <article class="card">
+            <h3>Предпродажная подготовка</h3>
+            <p>Повышаем ликвидность авто перед продажей или обменом.</p>
+            <span>от 12 000 ₽</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tradein" class="section section--dark">
+      <div class="container tradein">
+        <div class="tradein__info">
+          <p class="label label--light">Trade-in</p>
+          <h2>Обменяйте старый авто на новый без стресса</h2>
+          <p>
+            Проведем диагностику, предложим рыночную цену и сразу зачтем стоимость
+            вашего авто при покупке машины из нашего каталога.
+          </p>
+          <ol>
+            <li>Оставляете заявку и базовые данные</li>
+            <li>Получаете предварительную оценку онлайн</li>
+            <li>Приезжаете на очный осмотр и подписываете договор</li>
+          </ol>
+        </div>
+        <form id="tradein-form" class="panel">
+          <h3>Калькулятор Trade-in</h3>
+          <label>
+            Марка и модель
+            <input type="text" name="model" placeholder="Например, Kia Sportage" required>
+          </label>
+          <div class="form__row">
+            <label>
+              Год выпуска
+              <input type="number" name="year" min="1995" max="2026" required>
+            </label>
+            <label>
+              Пробег (км)
+              <input type="number" name="mileage" min="0" step="1000" required>
+            </label>
+          </div>
+          <label>
+            Состояние автомобиля
+            <select name="condition" required>
+              <option value="excellent">Отличное</option>
+              <option value="good" selected>Хорошее</option>
+              <option value="fair">Есть косметические дефекты</option>
+              <option value="poor">Нужен ремонт</option>
+            </select>
+          </label>
+          <button class="btn" type="submit">Рассчитать оценку</button>
+          <p id="estimate-output" class="estimate-output" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="inventory" class="section">
+      <div class="container">
+        <div class="section__heading">
+          <p class="label">Автотрейдинг</p>
+          <h2>Авто в наличии с проверенной историей</h2>
+        </div>
+        <div class="inventory">
+          <article class="inventory-card">
+            <h3>Toyota Camry 2022</h3>
+            <p>2.5 AT • 48 000 км • 1 владелец</p>
+            <strong>2 890 000 ₽</strong>
+          </article>
+          <article class="inventory-card">
+            <h3>BMW X3 2021</h3>
+            <p>2.0 xDrive • 56 000 км • сервисная книжка</p>
+            <strong>4 450 000 ₽</strong>
+          </article>
+          <article class="inventory-card">
+            <h3>Hyundai Tucson 2023</h3>
+            <p>2.0 AT • 22 000 км • без окрасов</p>
+            <strong>3 050 000 ₽</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="lead-form" class="section section--accent">
+      <div class="container">
+        <div class="section__heading">
+          <p class="label">Заявка</p>
+          <h2>Подберем решение под ваш запрос</h2>
+        </div>
+        <form id="contact-form" class="lead-form">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+          <select name="topic" required>
+            <option value="">Выберите тему</option>
+            <option value="service">Автоуслуги</option>
+            <option value="tradein">Trade-in</option>
+            <option value="buy">Покупка авто</option>
+          </select>
+          <button class="btn" type="submit">Отправить заявку</button>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts" class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo">AutoPoint</a>
+        <p>Москва, ул. Автомоторная, 15</p>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+        <p><a href="mailto:info@autopoint.ru">info@autopoint.ru</a></p>
+      </div>
+      <div>
+        <h3>Режим работы</h3>
+        <p>Пн–Вс: 09:00–21:00</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
